@@ -1,0 +1,19 @@
+{
+  "name": "hk2-phase2-project",
+  "version": "1.0.0",
+  "description": "Todo Full-Stack Web Application - Phase II",
+  "private": true,
+  "scripts": {
+    "dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "cd frontend && npm run start",
+    "lint": "cd frontend && npm run lint"
+  },
+  "keywords": [
+    "nextjs",
+    "todo",
+    "frontend"
+  ],
+  "author": "",
+  "license": "ISC"
+}
