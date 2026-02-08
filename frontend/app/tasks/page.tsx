@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import TaskCard from '@/components/TaskCard';
 import { useTasks } from '@/lib/hooks/useTasks';
-import { Task } from '@/types/task';
+import { Task } from '@/lib/types/task';
 
 export default function TasksPage() {
   const { tasks, loading, error, createTask, updateTask, deleteTask, toggleTask } = useTasks();
