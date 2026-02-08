@@ -5,6 +5,7 @@ export async function signup(email: string, password: string) {
   
   // Mock response
   return {
+    success: true,
     user: {
       id: '1',
       email,
@@ -19,6 +20,7 @@ export async function login(email: string, password: string) {
   
   // Mock response
   return {
+    success: true,
     user: {
       id: '1',
       email,
