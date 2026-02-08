@@ -16,11 +16,7 @@ interface TaskCardProps {
 }
 
 export default function TaskCard({ task, onEdit, onDelete, onToggleComplete }: TaskCardProps) {
-  const [expanded, setExpanded] = useState(false);
-
-  const toggleExpanded = () => {
-    setExpanded(!expanded);
-  };
+  const [expanded] = useState(false);
 
   return (
     <motion.div
@@ -46,29 +42,7 @@ export default function TaskCard({ task, onEdit, onDelete, onToggleComplete }: T
               </h3>
               {task.description && (
                 <div className="mt-2 text-sm text-muted-foreground">
-                  {!expanded && task.description.length > 100 ? (
-                    <>
-                      <p>{task.description.substring(0, 100)}...</p>
-                      <button 
-                        onClick={toggleExpanded}
-                        className="text-primary text-xs mt-1 inline-block hover:underline"
-                      >
-                        Read more
-                      </button>
-                    </>
-                  ) : (
-                    <>
-                      <p>{task.description}</p>
-                      {task.description.length > 100 && (
-                        <button 
-                          onClick={toggleExpanded}
-                          className="text-primary text-xs mt-1 inline-block hover:underline"
-                        >
-                          Show less
-                        </button>
-                      )}
-                    </>
-                  )}
+                  <p>{task.description}</p>
                 </div>
               )}
             </div>

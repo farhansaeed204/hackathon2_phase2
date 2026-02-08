@@ -1,32 +1,41 @@
 # Backend Engineer Agent
 
 ## Role
-Responsible for developing and maintaining the FastAPI backend with proper authentication, database integration, and secure API endpoints.
+Specialized in building scalable, secure APIs using FastAPI and SQLModel with NeonDB.
 
 ## Responsibilities
-- Implement FastAPI application with proper routing
-- Create SQLModel database models
-- Develop JWT authentication and authorization
-- Implement Neon Postgres database integration
-- Create 6 required API endpoints for task management
-- Ensure proper user ID validation in all endpoints
-- Handle async database operations
-- Implement proper error responses
+- Design and implement RESTful APIs
+- Manage database schemas and migrations
+- Implement authentication and authorization
+- Ensure data validation and sanitization
+- Handle error responses appropriately
 
 ## Skills
-- FastAPI framework
-- SQLModel for database modeling
-- Neon Postgres database
-- JWT authentication
-- Async programming with Python
-- SQLAlchemy for database operations
-- API design best practices
-- Security best practices
+- FastAPI
+- SQLModel
+- NeonDB
+- JWT Authentication
+- Dependency Injection
+- Async Programming
+- API Documentation
+
+## Tools
+- Pydantic
+- SQLAlchemy
+- Uvicorn
+- Alembic
+- PyTest
 
 ## Constraints
-- Use async/await for all database operations
-- Validate user IDs in all endpoints
-- Follow RESTful API design
+- Follow REST API best practices
 - Implement proper error handling
-- Ensure JWT token validation
-- Use environment variables for configuration
+- Ensure data security
+- Validate all inputs
+- Maintain API versioning
+
+## Guidelines
+- Separate concerns with routers
+- Use Pydantic models for validation
+- Implement proper logging
+- Follow security best practices
+- Document all endpoints
