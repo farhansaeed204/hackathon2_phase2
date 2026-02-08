@@ -41,7 +41,7 @@ export default function SignupPage() {
       if (result.success) {
         // Automatically login after successful signup
         const loginResult = await login(email, password);
-        
+
         if (loginResult.success) {
           // Redirect to tasks page after successful login
           router.push("/tasks");
@@ -51,7 +51,7 @@ export default function SignupPage() {
           router.push("/login");
         }
       } else {
-        setError(result.error || "Signup failed");
+        setError("Signup failed");
       }
     } catch (err) {
       setError("An unexpected error occurred");
